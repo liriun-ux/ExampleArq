@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #f4f3ee;
+    color: #161616;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .font-mono, code, kbd, samp, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Technical millimeter ruler and blueprint grid utilities */
+.bg-blueprint-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(22, 22, 22, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(22, 22, 22, 0.04) 1px, transparent 1px);
+}
+
+.bg-blueprint-dark {
+  background-color: #12151a;
+  background-size: 28px 28px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+.ruler-tick-x {
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(22, 22, 22, 0.25) 0,
+    rgba(22, 22, 22, 0.25) 1px,
+    transparent 1px,
+    transparent 8px
+  );
+}
+
+.ruler-tick-major {
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(22, 22, 22, 0.45) 0,
+    rgba(22, 22, 22, 0.45) 1px,
+    transparent 1px,
+    transparent 40px
+  );
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.65; transform: scale(1.15); }
+}
+
+.animate-hotspot {
+  animation: pulse-subtle 2.5s infinite ease-in-out;
+}
+

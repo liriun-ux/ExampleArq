@@ -1,0 +1,6 @@
+{
+  "name": "VÉRTICE — Consultoría de Arquitectura & Planos Interactivos",
+  "description": "Estudio y consultora técnica de arquitectura e ingeniería estructural. Planos interactivos con visualización de capas constructivas, análisis bioclimático y catálogo de proyectos destacados.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
